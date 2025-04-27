@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tdemy-Home</title>
+    <link rel="stylesheet" href="css_files/style.css">
+    <link rel="stylesheet" href="css_files/wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&family=Ubuntu:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="header-icon">
+            <a href="login.html"><img src="images/profile.png" id="profile-photo" style="border-radius: 15px;" height="25px" width="25px" alt="profile"></a>
+            <a id="logout"></a>
+            <a onclick="buy()"><i class="fa-regular fa-heart" style="color: #000000;"></i></a>
+            <a onclick="buy()"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+            <a ><i class="fa-solid fa-bars ham" style="color: #121212;"></i></a>
+        </div>
+    </header>
+    <section>
+        
+            <h1 style="margin-bottom: -50px;">About Us</h1>
+        <section class="about-top" style="margin-bottom: -80px;">
+            <h2>We are student of DCST</h2>
+            <h3>Founder and Developers of Tdemy</h3>
+        </section>
+        <div class="categories-content" >
+            <div class="box">
+                <img src="images/sahik.jpeg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Sk Shahik</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/sujoy.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Sujoy Manna</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/rudra.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Rudranil Ghosh</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/suvasish.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Suvasish Sarkar</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/animesh.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Animesh Kundu</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/swattik.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Swattik Mitra</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/mandira.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Mandira Ghosh</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/saheli.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Saheli Singharoy</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/ashwin.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Ashwin Yadav</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/piya.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Piya Seth</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/rupsa1.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Rupsa pal</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/pritam.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Pritam Majhi</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/subhas.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Subhas Adhikary</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/kastary.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Kastary Chowdhury</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/ratul.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Ratul Pal</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/animesh1.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Animesh Ghosh</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/neha.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Neha Kumari Singh</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/fulmoni.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Fulmoni Murmu</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/suva.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Shuvajyoti Maity</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/sachin.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">sachin Kumar</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/sanmoy.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">sanmoy Pal</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/sushil.png" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">Sushil Kumar Yadav</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/swarup.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">swarup Das</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+            <div class="box">
+                <img src="images/sahil.jpg" height="80px" width="80px" alt="">
+                <h3 style="margin-bottom: 8px;">A K Sahil Ahemed</h3>
+                <p style="margin-bottom: 6px;"></p>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="main-btn">
+            <a target="_blank" href="https://chat.whatsapp.com/DAUM9UAbgTs1tDvopJi1jy" class="btn">Join With Us</a>
+        </div>
+    </section>
+
+ 
+
+
+    <!-- satrt contact section -->
+
+    <section class="contact" id ="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <img src="images/logo.png" alt="logo">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61550053413050&mibextid=ZbWKwL">Facebook</a></li>
+                <li><a target="_blank" href="https://instagram.com/educure27?igshid=MzRlODBiNWFlZA==">Instagram</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/educure-online-tuition-platform-170673288">LinkedIn</a></li>
+            </div>
+            <div class="contact-content"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Categories</a></li>
+                <li><a href="my-courses.html">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a target="_blank" href="https://chat.whatsapp.com/DAUM9UAbgTs1tDvopJi1jy">Contact</a></li>
+            </div>
+            <div class="contact-content">
+                <li><a href="my-courses.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about_us.html">Instructor</a></li>
+                <li><a href="my-courses.html">Dashboard</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#">India,West Bengal,<br>Bardhaman,713401</a></li>
+                <li><a href="#">tdemy2k23@gmail.com</a></li>
+                <li><a href="#">8145636949</a></li>
+            </div>
+
+        </div>
+
+    </section>
+    <div class="last-text">
+        <p>@ 2023 Tdemy,All rights are reserved.</p>
+    </div>
+
+    <script src="js_files/script.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</body>
+
+</html>

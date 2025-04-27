@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tdemy-Home</title>
+    <link rel="stylesheet" href="css_files/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&family=Ubuntu:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="header-icon">
+            <a href="login.html"><img src="images/profile.png" id="profile-photo" style="border-radius: 15px;" height="25px" width="25px" alt="profile"></a>
+            <a id="logout"></a>
+            <a onclick="buy()"><i class="fa-regular fa-heart" style="color: #000000;"></i></a>
+            <a onclick="buy()"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+            <a ><i class="fa-solid fa-bars ham" style="color: #121212;"></i></a>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h6>Best Online Learning Platform</h6>
+            <h1>Accessible Online Course For All</h1>
+            <p>Own your future learning new skills online</p>
+            <div class="latter">
+                <form>
+                    <input type="email" placeholder="write your email">
+                    <a href="login.html">Let's Start</a>
+                </form>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="images/banner.png" height="500px" alt="banner">
+
+        </div>
+    </section>
+
+    <!-- start container section -->
+    <section class="container">
+        <div class="container-box">
+            <div class="container-img">
+                <i class='fas fa-user-graduate' style='font-size:36px;color: #14b3a1;'></i>
+            </div>
+            <div class="container-text">
+                <h4>2k</h4>
+                <p>Online courser</p>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <i class='fas fa-award' style='font-size:36px; color: #af3eaf;'></i>
+            </div>
+            <div class="container-text">
+                <h4>2k</h4>
+                <p>1k medels </p>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <i class='fas fa-chalkboard-teacher' style='font-size:36px;color: #3d3df5;'></i>
+            </div>
+            <div class="container-text">
+                <h4>2k</h4>
+                <p>Demo Classes</p>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <i class='fas fa-book-reader' style='font-size:36px ; color: #de3434;'></i>
+            </div>
+            <div class="container-text">
+                <h4>2k</h4>
+                <p>Unique way of teaching</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- start category section -->
+    <section class="categories" id="categories">
+        <div class="center-text">
+            <h5>CATEGORIES</h5>
+            <h2>Popular Categories</h2>
+        </div>
+
+        <div class="categories-content">
+            <div class="box">
+                <img src="images/java.png" height="80px" width="80px" alt="">
+                <h3>Java Developer</h3>
+                <p>5 Courses</p>
+            </div>
+            <div class="box">
+                <img src="images/Python-Basics.jpg" height="80px" width="80px" alt="">
+                <h3>Python Developer</h3>
+                <p>5 Courses</p>
+            </div>
+            <div class="box">
+                <img src="images/django.webp" height="80px" width="80px" alt="">
+                <h3>Android Developer</h3>
+                <p>5 Courses</p>
+            </div>
+            <div class="box">
+                <img src="images/hcj.png" height="80px" width="80px" alt="">
+                <h3>Web Developer</h3>
+                <p>5 Courses</p>
+            </div>
+        </div>
+        <div class="main-btn">
+            <a href="#categories" class="btn">All Categories</a>
+        </div>
+
+    </section>
+
+    <!-- start courses section -->
+    <section class="courses" id="courses">
+        <div class="center-text">
+            <h5>COURSES</h5>
+            <h2>Explore Popular Courses</h2>
+        </div>
+
+        <div class="course-content">
+            <div class="row">
+                <img src="images/c.jpg" onclick="C()">
+                <div class="course-text">
+                    <h5>$20.00</h5>
+                    <h3>Programing With C Complete Course</h3>
+                    <h6>8 hours 00 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{10k Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" >
+                <img src="images/hcj.png" alt="">
+                <div class="course-text">
+                    <h5>$40.00</h5>
+                    <h3>The Complete HTML CSS JS Course</h3>
+                    <h6>15 hours 00 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{19k Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" onclick="python()">
+                <img src="images/python.png" alt="">
+                <div class="course-text">
+                    <h5>$20.00</h5>
+                    <h3>The Python-Basics Course</h3>
+                    <h6>7 hours 00 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{50k Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="images/jsvs.jpg" alt="">
+                <div class="course-text">
+                    <h5>$20.00</h5>
+                    <h3>The Complete Java Basics Course</h3>
+                    <h6>7 hours 30 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-regular fa-star" style="color: #f0cf28;"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{12k Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="images/jslogo.avif" alt="">
+                <div class="course-text">
+                    <h5>$30.00</h5>
+                    <h3>The Complete JavaScript Course</h3>
+                    <h6>10 hours 00 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-regular fa-star" style="color: #f0cf28;"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{15k Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <div class="row">
+                <img src="images/django.webp" alt="">
+                <div class="course-text">
+                    <h5>$60.00</h5>
+                    <h3>The Complete Django Course</h3>
+                    <h6>16 hours 00 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-regular fa-star" style="color: #f0cf28;"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{16k Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="images/phplogo.jpg" alt="">
+                <div class="course-text">
+                    <h5>$25.00</h5>
+                    <h3>The Complete PHP Course</h3>
+                    <h6>9 hours 00 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{9k Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="images/nodejs.png" alt="">
+                <div class="course-text">
+                    <h5>$30.00</h5>
+                    <h3>The Node JS Course</h3>
+                    <h6>11 hours 00 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-regular fa-star" style="color: #f0cf28;"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{6k Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="images/mysql.jpg" alt="">
+                <div class="course-text">
+                    <h5>$25.00</h5>
+                    <h3>The MySql Course</h3>
+                    <h6>7 hours 00 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                            <a href="#"><i class="fa-solid fa-star" style="color: #f0cf28;"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{10k Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-btn">
+            <a onclick="buy()" class="btn">Buy Now</a>
+        </div>
+    </section>
+
+    <!-- start cta section  -->
+    <section class="cta">
+        <div class="center-text">
+            <h5>Trusted By</h5>
+            <h2>500+ Leading Universities And Companies</h2>
+        </div>
+
+    </section>
+
+    <!-- start about section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/4413024.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Want to share your knowledge? Join Us as a mentor</h2>
+            <p>High-defination video is video of heigher resolution and quality than standard-defination. While there is
+                no standardized meaning for high-defination, generally any vidoe</p>
+            <h4>Best Courses</h4>
+            <h5>Top Rated Instructor</h5>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+
+    <!-- satrt contact section -->
+
+    <section class="contact" id ="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <img src="images/logo.png" alt="logo">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61550053413050&mibextid=ZbWKwL">Facebook</a></li>
+                <li><a target="_blank" href="https://instagram.com/educure27?igshid=MzRlODBiNWFlZA==">Instagram</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/educure-online-tuition-platform-170673288">LinkedIn</a></li>
+            </div>
+            <div class="contact-content"> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a target="_blank" href="https://chat.whatsapp.com/DAUM9UAbgTs1tDvopJi1jy">Contact</a></li>
+            </div>
+            <div class="contact-content">
+                <li><a onclick="buy()">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#">Instructor</a></li>
+                <li><a href="my-courses.html">Dashboard</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#">India,West Bengal,<br>Bardhaman,713401</a></li>
+                <li><a href="#">tdemy2k23@gmail.com</a></li>
+                <li><a href="#">8145636949</a></li>
+            </div>
+
+        </div>
+
+    </section>
+    <div class="last-text">
+        <p>@ 2023 Tdemy,All rights are reserved.</p>
+    </div>
+
+    <script src="js_files/script.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</body>
+
+</html>

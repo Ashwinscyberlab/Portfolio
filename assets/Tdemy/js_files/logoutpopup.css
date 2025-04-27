@@ -1,0 +1,81 @@
+:root{
+    --bg-color:#ffffff;
+    --text-color:#22100d;
+    --second-color:#685f78;
+    --main-color:#f66962;
+    --big-font:3.8rem;
+    --h2-font:2.6rem;
+    --p-font:1.1rem;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+}
+
+.popup-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    max-width: 80%; /* Adjust the maximum width as needed */
+    background: url(../images/course-background.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    color: var(--main-color);
+    font-weight:bolder;
+}
+p{
+    font-weight: 600;
+    color:var(--second-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 5px 30px 5px 30px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 30px;
+    transition: all .40s ease;
+}
+.btn:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+
+/* Responsive adjustments for screens with a max-width of 800px or less */
+@media (max-width: 800px) {
+    .popup-content {
+        max-width: 85%; /* Adjust the maximum width for screens up to 800px */
+    }
+}
+
+/* Responsive adjustments for screens with a max-width of 600px or less */
+@media (max-width: 600px) {
+    .popup-content {
+        max-width: 90%; /* Adjust the maximum width for smaller screens (600px or less) */
+    }
+}
+
+/* Responsive adjustments for screens with a max-width of 400px or less */
+@media (max-width: 400px) {
+    .popup-content {
+        max-width: 95%; /* Adjust the maximum width for even smaller screens (400px or less) */
+    }
+}
