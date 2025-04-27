@@ -1,0 +1,143 @@
+
+
+.dev{
+    margin-top: 93px;
+    text-align: center;
+}
+.text{
+    margin-top: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.review{
+    margin-top: -68px;
+}
+.right{
+    text-align: center;
+    background-color: aqua;
+    font-size:40px;
+}
+.high{
+    text-align: center;
+    font-size: 30px;
+}
+.btn{
+    display: inline-block;
+    padding: 16px;
+    font-size: var(--p-font);
+    font-weight: 700;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 30px;
+    transition: all .40s ease;
+    border: none;
+}
+.btn:hover{
+    transform: scale(0.9) translateY(-5px);
+}
+.courses{
+    background: url(../images/course-background.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.course-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 4rem;
+    cursor: pointer;
+    border-radius: 15px;
+    .center{
+        text-align: center;
+    }
+
+}
+/* .courses img{
+    height: 200px;
+    width: 300px;
+} */
+
+.row{
+    background: var(--bg-color);
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+    box-sizing: 0px 5px 40px rgb(19 8 73 / 13%);
+    transition: all .40s ease;
+}
+
+.row:hover{
+    transform: translateY(-15px);
+}
+
+.row img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.course-text{
+    padding: 35px 20px;
+}
+
+.course-text h5{
+    color: var(--main-color);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.course-text h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 15px 0 15px;
+    transition: all .40s ease;
+}
+
+.course-text h3:hover{
+    color: var(--main-color);
+}
+.course-text h6{
+    color: #696969;
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.star i{
+    margin-right: 2px;
+    font-size: 17px;
+}
+.review{
+    color: #696969;
+    font-size: var(--p-font);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.center{
+    text-align: center;
+    line-height: 40px;
+    background-color: lavenderblush;
+    
+}
+.boxc{
+    font-size: 20px;
+    text-align: center;
+
+}
